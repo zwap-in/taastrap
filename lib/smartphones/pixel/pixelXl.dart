@@ -5,7 +5,7 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Pixel XL
 class PixelXl extends QueryDevice{
 
-  PixelXl(BuildContext context, Orientation? orientation)
-      : super(context: context, orientation: orientation, minWidth: 360, maxWidth: 640);
+  PixelXl(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 360, maxWidth: 640, currentMaxWidth: currentMaxWidth, currentMinWidth: currentMinWidth);
 
 }

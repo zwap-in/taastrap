@@ -5,7 +5,7 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Generic tablet
 class GenericTablet extends QueryDevice{
 
-  GenericTablet(BuildContext context, Orientation? orientation)
-      : super(context: context, orientation: orientation, minWidth: 768, maxWidth: 992);
+  GenericTablet(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 768, maxWidth: 992, currentMaxWidth: currentMaxWidth, currentMinWidth: currentMinWidth);
 
 }

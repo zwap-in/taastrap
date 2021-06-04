@@ -5,8 +5,8 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Nexus 6
 class Nexus6 extends QueryDevice{
 
-  Nexus6(BuildContext context, Orientation? orientation)
-      : super(context: context, orientation: orientation, minWidth: 360, maxWidth: 592);
+  Nexus6(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 360, maxWidth: 592, currentMinWidth: currentMinWidth, currentMaxWidth: currentMaxWidth);
 
 }
 
@@ -14,7 +14,7 @@ class Nexus6 extends QueryDevice{
 ///   - Nexus 6P
 class Nexus6P extends QueryDevice{
 
-  Nexus6P(BuildContext context, Orientation? orientation)
-      : super(context: context, orientation: orientation, minWidth: 360, maxWidth: 592);
+  Nexus6P(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 360, maxWidth: 592, currentMaxWidth: currentMaxWidth, currentMinWidth: currentMinWidth);
 
 }

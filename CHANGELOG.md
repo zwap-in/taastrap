@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * Added support to BoxConstraints conditions and adjusted desktop sizes
+
+## 0.0.4
+
+* Fixed all device version to accept currentMinWidth and currentMaxWidth params

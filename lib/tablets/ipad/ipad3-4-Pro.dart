@@ -7,7 +7,7 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Ipad Pro
 class Ipad34Pro extends QueryDevice{
 
-  Ipad34Pro(BuildContext context, Orientation? orientation)
-      : super(context: context, orientation: orientation, minWidth: 768, maxWidth: 1024);
+  Ipad34Pro(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 768, maxWidth: 1024, currentMaxWidth: currentMaxWidth, currentMinWidth: currentMinWidth);
 
 }

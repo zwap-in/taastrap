@@ -8,7 +8,7 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Iphone 5SE
 class Iphone5 extends QueryDevice{
 
-  Iphone5(BuildContext context, Orientation? orientation)
-      : super(context: context, orientation: orientation, minWidth: 320, maxWidth: 568);
+  Iphone5(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 320, maxWidth: 568, currentMaxWidth: currentMaxWidth, currentMinWidth: currentMinWidth);
 
 }

@@ -5,7 +5,7 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - GalaxyS3
 class GalaxyS3 extends QueryDevice{
 
-  GalaxyS3(BuildContext context, Orientation? orientation)
-      : super(context: context, orientation: orientation, minWidth: 360, maxWidth: 640);
+  GalaxyS3(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 360, maxWidth: 640, currentMinWidth: currentMinWidth, currentMaxWidth: currentMaxWidth);
 
 }
