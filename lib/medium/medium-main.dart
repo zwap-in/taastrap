@@ -1,0 +1,1 @@
+export 'generic-medium/genericMedium.dart';
