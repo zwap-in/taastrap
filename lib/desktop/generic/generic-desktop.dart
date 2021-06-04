@@ -6,6 +6,6 @@ import 'package:flutter_responsive_layouts/base.dart';
 class GenericDesktop extends QueryDevice{
 
   GenericDesktop(BuildContext context, Orientation? orientation)
-      : super(context: context, orientation: orientation, minWidth: 1200, maxWidth: 1600);
+      : super(context: context, orientation: orientation, minWidth: 1200, maxWidth: -1);
 
 }
