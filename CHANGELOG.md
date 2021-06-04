@@ -13,3 +13,7 @@
 ## 0.0.4
 
 * Fixed all device version to accept currentMinWidth and currentMaxWidth params
+
+## 0.0.5
+
+* Fixed BuildContext null params on all devices
