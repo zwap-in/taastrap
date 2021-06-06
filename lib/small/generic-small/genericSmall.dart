@@ -5,7 +5,7 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Generic small device
 class GenericSmall extends QueryDevice{
 
-  GenericSmall(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
-      : super(context: context, orientation: orientation, minWidth: 0, maxWidth: 320, currentMinWidth: currentMinWidth, currentMaxWidth: currentMaxWidth);
+  GenericSmall(BuildContext? context, Orientation? orientation, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 0, maxWidth: 320,  currentMaxWidth: currentMaxWidth);
 
 }

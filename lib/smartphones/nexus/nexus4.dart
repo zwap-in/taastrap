@@ -5,7 +5,7 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Nexus 4
 class Nexus4 extends QueryDevice{
 
-  Nexus4(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
-      : super(context: context, orientation: orientation, minWidth: 384, maxWidth: 592, currentMinWidth: currentMinWidth, currentMaxWidth: currentMaxWidth);
+  Nexus4(BuildContext? context, Orientation? orientation, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 384, maxWidth: 592,  currentMaxWidth: currentMaxWidth);
 
 }

@@ -5,7 +5,7 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Generic Phone
 class GenericPhone extends QueryDevice{
 
-  GenericPhone(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
-      : super(context: context, orientation: orientation, minWidth: 320, maxWidth: 768, currentMinWidth: currentMinWidth, currentMaxWidth: currentMaxWidth);
+  GenericPhone(BuildContext? context, Orientation? orientation, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 320, maxWidth: 768,  currentMaxWidth: currentMaxWidth);
 
 }

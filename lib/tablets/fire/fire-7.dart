@@ -5,7 +5,7 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Kindle Fire HD 7
 class Fire7Hd extends QueryDevice{
 
-  Fire7Hd(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
-      : super(context: context, orientation: orientation, minWidth: 800, maxWidth: 1280, currentMaxWidth: currentMaxWidth, currentMinWidth: currentMinWidth);
+  Fire7Hd(BuildContext? context, Orientation? orientation, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 800, maxWidth: 1280, currentMaxWidth: currentMaxWidth, );
 
 }

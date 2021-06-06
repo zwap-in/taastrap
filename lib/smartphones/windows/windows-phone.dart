@@ -5,7 +5,7 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Windows Phone
 class WindowsPhone extends QueryDevice{
 
-  WindowsPhone(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
-      : super(context: context, orientation: orientation, minWidth: 480, maxWidth: 800, currentMinWidth: currentMinWidth, currentMaxWidth: currentMaxWidth);
+  WindowsPhone(BuildContext? context, Orientation? orientation, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 480, maxWidth: 800,  currentMaxWidth: currentMaxWidth);
 
 }

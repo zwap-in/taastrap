@@ -5,7 +5,7 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Generic tablet
 class Nexus9 extends QueryDevice{
 
-  Nexus9(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
-      : super(context: context, orientation: orientation, minWidth: 1536, maxWidth: 2048, currentMaxWidth: currentMaxWidth, currentMinWidth: currentMinWidth);
+  Nexus9(BuildContext? context, Orientation? orientation, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 1536, maxWidth: 2048, currentMaxWidth: currentMaxWidth, );
 
 }

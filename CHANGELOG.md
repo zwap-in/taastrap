@@ -17,3 +17,7 @@
 ## 0.0.5
 
 * Fixed BuildContext null params on all devices
+
+## 0.0.6
+
+* Adjusted the sized needed for the BoxConstraints conditions

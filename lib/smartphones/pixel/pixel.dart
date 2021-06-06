@@ -5,7 +5,7 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Pixel
 class Pixel extends QueryDevice{
 
-  Pixel(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
-      : super(context: context, orientation: orientation, minWidth: 360, maxWidth: 640, currentMinWidth: currentMinWidth, currentMaxWidth: currentMaxWidth);
+  Pixel(BuildContext? context, Orientation? orientation, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 360, maxWidth: 640,  currentMaxWidth: currentMaxWidth);
 
 }

@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
   /// @Return:
   ///   - int: the device type value
   int _deviceType(BoxConstraints size){
-    Iphone4 _iphone4Layout = Iphone4(null, null, size.minWidth as int, size.maxWidth as int);
-    IphoneX _iphoneXLayout = IphoneX(null, null, size.minWidth as int, size.maxWidth as int);
+    Iphone4 _iphone4Layout = Iphone4(null, null, size.minWidth as int);
+    IphoneX _iphoneXLayout = IphoneX(null, null, size.minWidth as int);
     return _iphoneXLayout.isPortraitLandscape() ? 0 : (_iphone4Layout.isPortraitLandscape() ? 1 : 2);
   }
 

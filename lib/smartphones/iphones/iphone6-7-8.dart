@@ -8,14 +8,14 @@ import 'package:flutter_responsive_layouts/base.dart';
 ///   - Iphone 8
 class Iphone678 extends QueryDevice{
 
-  Iphone678(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
-      : super(context: context, orientation: orientation, minWidth: 375, maxWidth: 667, currentMinWidth: currentMinWidth, currentMaxWidth: currentMaxWidth);
+  Iphone678(BuildContext? context, Orientation? orientation, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 375, maxWidth: 667,  currentMaxWidth: currentMaxWidth);
 
 }
 
 class Iphone678Plus extends QueryDevice{
 
-  Iphone678Plus(BuildContext? context, Orientation? orientation, int? currentMinWidth, int? currentMaxWidth)
-      : super(context: context, orientation: orientation, minWidth: 414, maxWidth: 736, currentMaxWidth: currentMaxWidth, currentMinWidth: currentMinWidth);
+  Iphone678Plus(BuildContext? context, Orientation? orientation, int? currentMaxWidth)
+      : super(context: context, orientation: orientation, minWidth: 414, maxWidth: 736, currentMaxWidth: currentMaxWidth, );
 
 }
