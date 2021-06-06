@@ -6,6 +6,6 @@ import 'package:flutter_responsive_layouts/base.dart';
 class GenericSmall extends QueryDevice{
 
   GenericSmall(BuildContext? context, Orientation? orientation, int? currentMaxWidth)
-      : super(context: context, orientation: orientation, minWidth: 0, maxWidth: 300,  currentMaxWidth: currentMaxWidth);
+      : super(context: context, orientation: orientation, minWidth: 0, maxWidth: 319,  currentMaxWidth: currentMaxWidth);
 
 }

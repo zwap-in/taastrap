@@ -29,3 +29,7 @@
 ## 0.0.8
 
 * Adjusted the sized for generic devices
+
+## 0.0.9
+
+* Adjusted the sized for generic devices

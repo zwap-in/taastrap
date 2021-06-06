@@ -1,6 +1,6 @@
 name: flutter_responsive_layouts
 description: A flutter package to handle responsive layouts in flutter
-version: 0.0.8
+version: 0.0.9
 homepage: https://github.com/zwap-in/flutter_responsive_layouts
 
 environment:
