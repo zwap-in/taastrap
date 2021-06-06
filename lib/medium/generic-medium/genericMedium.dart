@@ -6,6 +6,6 @@ import 'package:flutter_responsive_layouts/base.dart';
 class GenericMedium extends QueryDevice{
 
   GenericMedium(BuildContext? context, Orientation? orientation, int? currentMaxWidth)
-      : super(context: context, orientation: orientation, minWidth: 992, maxWidth: 1450, currentMaxWidth: currentMaxWidth, );
+      : super(context: context, orientation: orientation, minWidth: 800, maxWidth: 1450, currentMaxWidth: currentMaxWidth, );
 
 }
