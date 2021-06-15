@@ -42,3 +42,7 @@
     - Added the support for bootstrap col-x responsive view
     - The package was renamed from flutter_responsive_layout to taastrap
     - The old link was https://pub.dev/packages/flutter_responsive_layouts
+    
+## 0.1.1
+
+* Removed the conversion to 0-5 range inside the flex factor

@@ -54,36 +54,6 @@ class ResponsiveElement extends StatelessWidget{
 
   }
 
-  /// It converts the bootstrap col dimension to flutter flex size
-  int _convertSizeElement(int dimension){
-    switch(dimension){
-      case 1:
-        return 0;
-      case 2:
-        return 0;
-      case 3:
-        return 1;
-      case 4:
-        return 1;
-      case 5:
-        return 2;
-      case 6:
-        return 2;
-      case 7:
-        return 3;
-      case 8:
-        return 3;
-      case 9:
-        return 4;
-      case 10:
-        return 4;
-      case 11:
-        return 5;
-      default:
-        return 5;
-    }
-  }
-
   /// It retrieves the size for flexing the element inside the Expanded
   int getSizeElement(){
     String currentSize = mappingSizes[this.deviceType]!;
@@ -93,7 +63,7 @@ class ResponsiveElement extends StatelessWidget{
     int lg = this.lg ?? 4;
     int xl = this.xl ?? 3;
     int flexSize = (currentSize == "xs" ? xs : (currentSize == "sm" ? sm : (currentSize == "md" ? md : (currentSize == "lg" ? lg : xl))));
-    return this._convertSizeElement(flexSize);
+    return flexSize;
   }
 
   @override

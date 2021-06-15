@@ -44,7 +44,7 @@ class ExampleCard extends StatelessWidget{
 class MyApp extends StatelessWidget {
 
   final Map<Widget, Map<String, int>> widgets = {
-    ExampleCard() : {},
+    ExampleCard() : {'xl': 12},
     ExampleCard() : {},
     ExampleCard() : {},
     ExampleCard() : {},

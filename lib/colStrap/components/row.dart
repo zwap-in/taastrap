@@ -38,7 +38,7 @@ class ResponsiveRow extends StatelessWidget{
       );
       int currentSize = tmp.getSizeElement();
       int tmpCounter = counter + currentSize;
-      if(tmpCounter > 5){
+      if(tmpCounter > 12){
         finals.add(
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
