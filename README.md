@@ -1,12 +1,12 @@
-# flutter_responsive_layouts
+# taastrap
 
-A flutter package to handle responsive layouts in flutter
+The bootstrap library for flutter
 
 ## General Info
 
-This repository is a simple package to handle some responsive layouts with different media queries based on different devices
+This repository has the core to recreate the bootstrap classes for any flutter projects
 
 ## Use Case
 
-Use this utilities functions to handle layouts in base of different devices. See [examples/example.dart] to get an example more detailed
+See [example/example.dart] for an example to how to use this package. You could pass any widgets inside a component called ResponsiveRow with the correct col sizes for any layouts
 

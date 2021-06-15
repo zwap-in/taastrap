@@ -1,37 +1,68 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import 'package:flutter_responsive_layouts/flutter_responsive_layouts.dart';
-
-/// @Description: show the app bar just on iphone 4's layout or iphone x's layout
+import 'package:taastrap/taastrap.dart';
 
 /// The main function to start the application
 main() async{
   runApp(MyApp());
 }
 
+class ExampleCard extends StatelessWidget{
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.all(10),
+      child:  Card(
+        clipBehavior: Clip.antiAlias,
+        child: Column(
+          children: [
+            Image.network('https://zwap.in/api/media/explorer_babTtSn_QVt1BZG.png', height: 50, width: 50,),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Text(
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+                    "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                    " when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                style: TextStyle(color: Colors.black.withOpacity(0.6)),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 10),
+              child: ElevatedButton(onPressed: () {  }, child: Text("Test button"),),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+
+
+}
 
 class MyApp extends StatelessWidget {
 
-  /// @Description:
-  ///   - it returns the device type based on this two layouts
-  /// @Params:
-  ///   - BoxConstraints size: the size of the current device
-  /// @Return:
-  ///   - int: the device type value
-  int _deviceType(BoxConstraints size){
-    Iphone4 _iphone4Layout = Iphone4(null, null, size.minWidth as int);
-    IphoneX _iphoneXLayout = IphoneX(null, null, size.minWidth as int);
-    return _iphoneXLayout.isPortraitLandscape() ? 0 : (_iphone4Layout.isPortraitLandscape() ? 1 : 2);
-  }
+  final Map<Widget, Map<String, int>> widgets = {
+    ExampleCard() : {},
+    ExampleCard() : {},
+    ExampleCard() : {},
+    ExampleCard() : {},
+    ExampleCard() : {},
+  };
+
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: LayoutBuilder(builder: (context, size){
+        Generic _generic = Generic(maxWith: size.maxWidth.toInt());
+        int _deviceType = _generic.deviceType();
         return Scaffold(
-          appBar: _deviceType(size) == 0 || _deviceType(size) == 1 ? AppBar() : null,
-          body: Container(),
+          body: _deviceType == -1 ? Container() : SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: ResponsiveRow(deviceType: _deviceType, children: this.widgets,),
+          ),
         );
       },)
     );

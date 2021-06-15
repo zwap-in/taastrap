@@ -33,3 +33,12 @@
 ## 0.0.9
 
 * Adjusted the sized for generic devices
+
+## 0.1.0
+
+* It added some major changes:
+    - Adjusted all devices sizes
+    - Removed all generic devices and it was created a new generic class to retrieve the generic device
+    - Added the support for bootstrap col-x responsive view
+    - The package was renamed from flutter_responsive_layout to taastrap
+    - The old link was https://pub.dev/packages/flutter_responsive_layouts
