@@ -46,3 +46,7 @@
 ## 0.1.1
 
 * Removed the conversion to 0-5 range inside the flex factor
+
+## 0.1.2
+
+* Added the a widget to inherit the device type value from any ancestor widgets
