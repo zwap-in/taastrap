@@ -50,3 +50,7 @@
 ## 0.1.2
 
 * Added the a widget to inherit the device type value from any ancestor widgets
+
+## 0.1.3
+
+* Removed from ResponsiveRow the deviceType param and adjusted [example/example.dart] script

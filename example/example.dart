@@ -58,13 +58,17 @@ class MyApp extends StatelessWidget {
       home: LayoutBuilder(builder: (context, size){
         Generic _generic = Generic(maxWith: size.maxWidth.toInt());
         int _deviceType = _generic.deviceType();
-        return Scaffold(
-          body: _deviceType == -1 ? Container() : SingleChildScrollView(
-            scrollDirection: Axis.vertical,
-            child: ResponsiveRow(deviceType: _deviceType, children: this.widgets,),
-          ),
+        return DeviceInherit(
+            deviceType: _deviceType,
+            child: Scaffold(
+              body: _deviceType == -1 ? Container() : SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: ResponsiveRow(children: this.widgets,),
+              ),
+            )
         );
-      },)
+      },
+      )
     );
   }
 }

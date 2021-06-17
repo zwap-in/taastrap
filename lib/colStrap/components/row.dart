@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:taastrap/taastrap.dart';
 
 import 'element.dart';
 
@@ -8,16 +9,12 @@ class ResponsiveRow extends StatelessWidget{
   /// The children to make responsive with a mapping sizes
   final Map<Widget, Map<String, int>> children;
 
-  /// The device type in current use
-  final int deviceType;
-
   ResponsiveRow({Key? key,
     required this.children,
-    required this.deviceType
   }): super(key: key);
 
   /// It retrieves the children in many row as it needs
-  List<Row> _getChildren(){
+  List<Row> _getChildren(int deviceType){
     List<Row> finals = [];
     List<Widget> tmpChildren = [];
     int counter = 0;
@@ -64,8 +61,11 @@ class ResponsiveRow extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
+
+    int _deviceType = DeviceInherit.of(context).deviceType;
+
     return Column(
-      children: this._getChildren(),
+      children: this._getChildren(_deviceType),
     );
   }
 
