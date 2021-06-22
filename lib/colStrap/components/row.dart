@@ -10,15 +10,15 @@ class ResponsiveRow extends StatelessWidget{
   final Map<Widget, Map<String, int>> children;
 
   /// The list controller
-  final ScrollController controller;
+  final ScrollController? controller;
 
   /// The axis direction of the list scroll
   final Axis axis;
 
   ResponsiveRow({Key? key,
-    required this.controller,
     required this.children,
-    this.axis = Axis.vertical
+    this.axis = Axis.vertical,
+    this.controller
   }): super(key: key);
 
   /// It retrieves the children in many row as it needs

@@ -58,3 +58,7 @@
 ## 0.1.4
 
 * Changed the container widget for the ResponsiveRow from Column to ListView
+
+## 0.1.5
+
+* Changed the controller param to an optional param
