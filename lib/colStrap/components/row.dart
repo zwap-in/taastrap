@@ -9,8 +9,16 @@ class ResponsiveRow extends StatelessWidget{
   /// The children to make responsive with a mapping sizes
   final Map<Widget, Map<String, int>> children;
 
+  /// The list controller
+  final ScrollController controller;
+
+  /// The axis direction of the list scroll
+  final Axis axis;
+
   ResponsiveRow({Key? key,
+    required this.controller,
     required this.children,
+    this.axis = Axis.vertical
   }): super(key: key);
 
   /// It retrieves the children in many row as it needs
@@ -64,7 +72,9 @@ class ResponsiveRow extends StatelessWidget{
 
     int _deviceType = DeviceInherit.of(context).deviceType;
 
-    return Column(
+    return ListView(
+      controller: this.controller,
+      scrollDirection: this.axis,
       children: this._getChildren(_deviceType),
     );
   }

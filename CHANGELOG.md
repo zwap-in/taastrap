@@ -54,3 +54,7 @@
 ## 0.1.3
 
 * Removed from ResponsiveRow the deviceType param and adjusted [example/example.dart] script
+
+## 0.1.4
+
+* Changed the container widget for the ResponsiveRow from Column to ListView

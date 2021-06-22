@@ -54,6 +54,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    ScrollController controller = ScrollController();
+
     return MaterialApp(
       home: LayoutBuilder(builder: (context, size){
         Generic _generic = Generic(maxWith: size.maxWidth.toInt());
@@ -61,9 +64,9 @@ class MyApp extends StatelessWidget {
         return DeviceInherit(
             deviceType: _deviceType,
             child: Scaffold(
-              body: _deviceType == -1 ? Container() : SingleChildScrollView(
-                scrollDirection: Axis.vertical,
-                child: ResponsiveRow(children: this.widgets,),
+              body: _deviceType == -1 ? Container() : ResponsiveRow(
+                controller: controller,
+                children: this.widgets,
               ),
             )
         );
