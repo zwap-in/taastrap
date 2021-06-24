@@ -72,7 +72,11 @@ class ResponsiveRow extends StatelessWidget{
 
     int _deviceType = DeviceInherit.of(context).deviceType;
 
-    return ListView(
+    return this.controller == null ? (this.axis == Axis.vertical ? Column(
+      children: this._getChildren(_deviceType),
+    ) : Row(
+      children: this._getChildren(_deviceType),
+    )) : ListView(
       controller: this.controller,
       scrollDirection: this.axis,
       children: this._getChildren(_deviceType),

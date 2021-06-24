@@ -62,3 +62,7 @@
 ## 0.1.5
 
 * Changed the controller param to an optional param
+
+## 0.1.6
+
+* Changed the container of the ResponsiveRow
