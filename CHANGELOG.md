@@ -66,3 +66,7 @@
 ## 0.1.6
 
 * Changed the container of the ResponsiveRow
+
+## 0.1.7
+
+* Added GetIt dependency injection to retrieve the DeviceType

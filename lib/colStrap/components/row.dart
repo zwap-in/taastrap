@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:taastrap/taastrap.dart';
+import 'package:get_it/get_it.dart';
 
 import 'element.dart';
 
@@ -70,7 +71,7 @@ class ResponsiveRow extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
-    int _deviceType = DeviceInherit.of(context).deviceType;
+    int _deviceType = GetIt.I<Generic>().deviceType();
 
     return this.controller == null ? (this.axis == Axis.vertical ? Column(
       children: this._getChildren(_deviceType),
