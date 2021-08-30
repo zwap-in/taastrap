@@ -1,6 +1,6 @@
 name: taastrap
 description: The bootrsap library for flutter
-version: 0.1.9
+version: 0.1.10
 homepage: https://github.com/zwap-in/taastrap
 
 environment:
@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
 
   get_it: ^7.1.3
+
+  zwap_utils: ^0.0.7
 
 dev_dependencies:
   flutter_test:
