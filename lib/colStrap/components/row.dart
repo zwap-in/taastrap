@@ -16,10 +16,14 @@ class ResponsiveRow extends StatelessWidget{
   /// The axis direction of the list scroll
   final Axis axis;
 
+  /// Boolean flag to check if the child is custom or a default child
+  final bool customChild;
+
   ResponsiveRow({Key? key,
     required this.children,
     this.axis = Axis.vertical,
-    this.controller
+    this.controller,
+    this.customChild = false
   }): super(key: key);
 
   /// It retrieves the children in many row as it needs
@@ -36,6 +40,7 @@ class ResponsiveRow extends StatelessWidget{
       ResponsiveElement tmp = ResponsiveElement(
         element: key,
         deviceType: deviceType,
+        customChild: this.customChild,
         xs: xs,
         sm: sm,
         md: md,
