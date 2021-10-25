@@ -1,6 +1,14 @@
-import 'package:flutter/cupertino.dart';
+/// IMPORTING THIRD PARTY PACKAGES
+import 'package:flutter/material.dart';
 import 'package:taastrap/utils/utils.dart';
 
+/// Custom interface class to define a responsive widget element
+abstract class ResponsiveWidget extends Widget{
+
+  /// It plots the size for this responsive widget
+  double getSize();
+
+}
 
 /// Insert any element inside component to make the widget responsive
 class ResponsiveElement extends StatelessWidget{
@@ -10,9 +18,6 @@ class ResponsiveElement extends StatelessWidget{
 
   /// The device type in current use
   final int deviceType;
-
-  /// Is it an element with custom flexible properties
-  final bool customChild;
 
   /// Optional value for xs devices
   final int? xs;
@@ -32,7 +37,6 @@ class ResponsiveElement extends StatelessWidget{
   ResponsiveElement({Key? key,
     required this.element,
     required this.deviceType,
-    required this.customChild,
     this.xs,
     this.sm,
     this.md,
@@ -72,7 +76,7 @@ class ResponsiveElement extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return this.customChild ? this.element : Expanded(
+    return Expanded(
       child: this.element,
       flex: this.getSizeElement(),
     );

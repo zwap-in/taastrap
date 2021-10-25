@@ -23,8 +23,8 @@ class Generic{
   late GenericDevice extraLarge;
 
   Generic({required this.maxWith}){
-    this.extraSmall = GenericDevice(320, 414, null, null, this.maxWith);
-    this.small = GenericDevice(415, 767, null, null, this.maxWith);
+    this.extraSmall = GenericDevice(320, 375, null, null, this.maxWith);
+    this.small = GenericDevice(376, 767, null, null, this.maxWith);
     this.medium = GenericDevice(768, 1152, null, null, this.maxWith);
     this.large = GenericDevice(1153, 1440, null, null, this.maxWith);
     this.extraLarge = GenericDevice(1441, -1, null, null, this.maxWith);

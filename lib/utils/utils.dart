@@ -19,7 +19,7 @@ Map<int, String> mappingSizes = {
 };
 
 /// It gets multiple conditions in base of which of the different devices is the current device
-dynamic getMultipleConditions(dynamic four, dynamic three, dynamic two, dynamic one, dynamic zero){
+T getMultipleConditions<T>(T four, T three, T two, T one, T zero){
   int deviceType = Utils.getIt<Generic>().deviceType();
   if(deviceType == 4){
     return four;

@@ -61,12 +61,7 @@ class MyApp extends StatelessWidget {
       home: LayoutBuilder(builder: (context, size){
         Generic _generic = Generic(maxWith: size.maxWidth.toInt());
         int _deviceType = _generic.deviceType();
-        return Scaffold(
-          body: _deviceType == -1 ? Container() : ResponsiveRow(
-            controller: controller,
-            children: this.widgets,
-          ),
-        );
+        return Container();
       },
       )
     );
